@@ -30,5 +30,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This React app uses the [web-midi-hooks](https://www.npmjs.com/package/web-midi-hooks) npm package to visualize data received from a connected MIDI drum kit.",
+  "main": "lib.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trithir/web-midi-drums.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trithir/web-midi-drums/issues"
+  },
+  "homepage": "https://github.com/Trithir/web-midi-drums#readme"
 }
