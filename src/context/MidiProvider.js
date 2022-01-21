@@ -19,6 +19,9 @@ const MidiProvider = (props) => {
   };
 
   const onMIDIMessage = (midiMessage) => {
+    if(midiMessage.data.length > 1) {
+      // console.log(midiMessage)
+    }
     const event = midiMessage.data[Constants.EVENT_INDEX];
     const newLSB = midiMessage.data[Constants.LEAST_SIGNIFICANT_BYTE_INDEX];
     const newMSB = midiMessage.data[Constants.MOST_SIGNIFICANT_BYTE_INDEX];
@@ -27,7 +30,7 @@ const MidiProvider = (props) => {
       note: newLSB,
       velocity: newMSB
     };
-
+    console.log(event, newLSB, newMSB)
     switch(event) {
       case Constants.NOTE_ON_EVENT:
         setKeyData(newKeyData);
@@ -56,7 +59,9 @@ const MidiProvider = (props) => {
 
   useEffect(() => {
     async function setUp() {
+      console.log('before midisetup')
       const midiInput = await setUpMIDIAccess();
+      console.log('after midisetup', midiInput)
 
       midiInput.onmidimessage = onMIDIMessage;
       midiInput.onstatechange = onStateChange;

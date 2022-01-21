@@ -1,7 +1,8 @@
 .visualizer {
   width: 100vw;
   height: 100vh;
-  background-color: #1b262c;
+  /* background-color: #1b262c; */
+  background-color: #00ff00;
   position: relative;
 }
 
@@ -102,7 +103,7 @@
 }
 
 .kickStop2 {
-  stop-color: #e8505b;
+  stop-color: #7b23cd;
   stop-opacity: 1;
 }
 
@@ -112,7 +113,7 @@
 }
 
 .snareStop2 {
-  stop-color: orange;
+  stop-color: #75cd23;
   stop-opacity: 1;
 }
 
