@@ -1,5 +1,5 @@
 {
-  "name": "web-midi-drums",
+  "name": "web-midi-drum-vizualizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,16 +32,9 @@
     ]
   },
   "description": "This React app uses the [web-midi-hooks](https://www.npmjs.com/package/web-midi-hooks) npm package to visualize data received from a connected MIDI drum kit.",
-  "main": "lib.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Trithir/web-midi-drums.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Trithir/web-midi-drums/issues"
-  },
-  "homepage": "https://github.com/Trithir/web-midi-drums#readme"
+  "license": "ISC"
+  
+
 }

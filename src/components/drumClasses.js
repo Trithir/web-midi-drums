@@ -200,13 +200,8 @@ export class Tom3Rim extends Instrument {
   }
 
   makeShape = (velocity) => {
-    const radius = velocity * 2;
     this.rotationRadians += .1;
 
-
-    const xPos = Math.cos(this.rotationRadians) * radius + 400;
-    const yPos = Math.sin(this.rotationRadians) * radius + 400;
-    
     return (
       <div style={{position:'absolute', left:this.timesHit % 2 === 0 ? '25vw' : '75vw', top:'25vh'}} key={Math.random()}>
         <svg className="tom" width="100" height="100" viewBox="-100 -100 200 200">
